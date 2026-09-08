@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tertiary-fixed: #ffdbca;
+  --color-on-primary-fixed: #131b2e;
+  --color-outline-variant: #c6c6cd;
+  --color-primary-container: #131b2e;
+  --color-on-tertiary-fixed-variant: #763300;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-container: #331200;
+  --color-on-secondary-fixed-variant: #005047;
+  --color-on-secondary-fixed: #00201c;
+  --color-background: #f8f9ff;
+  --color-primary-fixed-dim: #bec6e0;
+  --color-surface-container-high: #dce9ff;
+  --color-secondary-fixed: #abf0e2;
+  --color-on-background: #0d1c2e;
+  --color-surface-container-low: #eff4ff;
+  --color-secondary-fixed-dim: #8fd3c6;
+  --color-surface-container-highest: #d5e3fc;
+  --color-surface-dim: #ccdbf3;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-surface-variant: #d5e3fc;
+  --color-surface-container: #e6eeff;
+  --color-tertiary-fixed-dim: #ffb68e;
+  --color-surface-bright: #f8f9ff;
+  --color-on-tertiary-fixed: #331200;
+  --color-inverse-surface: #233144;
+  --color-error-container: #ffdad6;
+  --color-surface-tint: #565e74;
+  --color-secondary: #21695f;
+  --color-on-error-container: #93000a;
+  --color-on-error: #ffffff;
+  --color-on-surface-variant: #45464d;
+  --color-error: #ba1a1a;
+  --color-on-tertiary: #ffffff;
+  --color-primary: #000000;
+  --color-on-surface: #0d1c2e;
+  --color-primary-fixed: #dae2fd;
+  --color-on-tertiary-container: #cf6721;
+  --color-surface: #f8f9ff;
+  --color-on-primary-container: #7c839b;
+  --color-outline: #76777d;
+  --color-secondary-container: #a8eddf;
+  --color-on-secondary-container: #266d63;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-fixed-variant: #3f465c;
+  --color-inverse-primary: #bec6e0;
+  --color-on-primary: #ffffff;
+  --color-tertiary: #000000;
+
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-3xl: 4.5rem;
+  --spacing-space-4xl: 6rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-gutter-desktop: 2rem;
+  --spacing-margin-page: 2.5rem;
+
+  --font-ibm: 'IBM Plex Sans Arabic', sans-serif;
+  --font-cairo: 'Cairo', sans-serif;
+}
+
+@utility font-headline-md { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-headline-md { font-size: 24px; line-height: 32px; }
+
+@utility font-headline-lg { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-headline-lg { font-size: 32px; line-height: 42px; letter-spacing: -0.01em; }
+
+@utility font-body-md { font-weight: 400; font-family: var(--font-ibm); }
+@utility text-body-md { font-size: 14px; line-height: 22px; }
+
+@utility font-label-md { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-label-md { font-size: 13px; line-height: 18px; letter-spacing: 0.02em; }
+
+@utility font-body-lg { font-weight: 400; font-family: var(--font-ibm); }
+@utility text-body-lg { font-size: 16px; line-height: 26px; }
+
+@utility font-headline-xl { font-weight: 700; font-family: var(--font-ibm); }
+@utility text-headline-xl { font-size: 40px; line-height: 52px; letter-spacing: -0.015em; }
+
+@utility font-caption-code { font-weight: 500; font-family: var(--font-ibm); }
+@utility text-caption-code { font-size: 12px; line-height: 16px; }
+
+@utility font-display-hero-mobile { font-weight: 700; font-family: var(--font-ibm); }
+@utility text-display-hero-mobile { font-size: 36px; line-height: 44px; letter-spacing: -0.01em; }
+
+@utility font-label-sm { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-label-sm { font-size: 11px; line-height: 16px; letter-spacing: 0.04em; }
+
+@utility font-title-lg { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-title-lg { font-size: 20px; line-height: 28px; }
+
+@utility font-title-md { font-weight: 500; font-family: var(--font-ibm); }
+@utility text-title-md { font-size: 18px; line-height: 26px; }
+
+@utility font-headline-xl-mobile { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-headline-xl-mobile { font-size: 28px; line-height: 36px; letter-spacing: -0.01em; }
+
+@utility font-headline-lg-mobile { font-weight: 600; font-family: var(--font-ibm); }
+@utility text-headline-lg-mobile { font-size: 24px; line-height: 32px; }
+
+@utility font-display-hero { font-weight: 700; font-family: var(--font-ibm); }
+@utility text-display-hero { font-size: 56px; line-height: 68px; letter-spacing: -0.02em; }
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-ibm);
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
